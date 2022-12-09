@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+
+
+@tailwind utilities;
+
+@layer base {
+    body {
+      @apply text-body;
+    }
+  
+    @screen lg { 
+      body {
+        @apply text-body-lg;
+      }
+    }
+  }
+.custom-line-button{
+    @apply  bg-transparent font-[Poppins] hover:bg-purple-400 text-purple-700  hover:text-black py-2 px-4 border border-purple-700 hover:border-transparent rounded;
+   
+
+}

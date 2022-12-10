@@ -25,9 +25,9 @@ const HomeBanner = () => {
             {/* the small screen image*/}
 
 
-            <div className="flex md:hidden flex-wrap flex-row items-center justify-start pl-2  w-full p-28   bg-gradient-to-tr from-primary-bright via-primary-900 to-primary-800 ">
+            <div className="flex flex-wrap md:hidden py-auto flex-row items-center justify-start pl-2  w-full h-72   bg-gradient-to-tr from-primary-bright via-primary-900 to-primary-800 ">
 
-          <h1 className='text-white sm:text-2xl text-3xl'>Find the perfect  LANCER  for your <br /> business</h1>
+          <h1 className='text-white sm:text-2xl text-3xl'>Find the perfect  LANCER  for your   business</h1>
 
 
 

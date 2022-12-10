@@ -3,10 +3,10 @@ import Button from './Button';
 const Navbar = () => {
   let [open, setOpen] = useState(false);
   return (
-    <div>
-      <div className='shadow-md shadow-shadow-color w-full fixed top-0 left-0'>
+    <header>
+      <div className='shadow-md shadow-shadow-color w-full fixed top-0 left-0 z-10'>
         <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
-          <div className=' cursor-pointer flex items-center  flex-shrink-0 font-[Poppins] 
+          <div className=' cursor-pointer flex items-center  flex-shrink-0  
       text-gray-800'>
 
 
@@ -62,17 +62,17 @@ const Navbar = () => {
           <ul className={`md:flex mt-14 md:mt-0    md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
 
             <li className='md:ml-8 text-xl md:my-0 my-7 '>
-              <a href="#" className='custom-line-button' >Login</a>
+              <a href="#" className='custom-line-button font-serif' >Login</a>
 
             </li>
 
-            <Button>
+            <Button >
               Join
             </Button>
           </ul>
         </div>
       </div>
-    </div>
+    </header>
   )
 }
 

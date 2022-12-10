@@ -11,6 +11,9 @@ module.exports = {
       fontSize: {
         'body-lg': '1rem',
         'body': '.875rem',
+      },
+      fontFamily:{
+        lora:"'lora',serif",
       }
     },
   },

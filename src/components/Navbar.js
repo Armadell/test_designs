@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Button from './Button';
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   let [open, setOpen] = useState(false);
   return (
@@ -62,13 +63,13 @@ const Navbar = () => {
           <ul className={`md:flex mt-14 md:mt-0    md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
 
             <li className='md:ml-8 text-xl md:my-0 my-7 '>
-              <a href="#" className='custom-line-button font-serif' >Login</a>
+              <Link to="/login" className='custom-line-button font-serif' >Login</Link>
 
             </li>
 
-            <Button >
+            <Link to='/register'> <Button >
               Join
-            </Button>
+            </Button></Link>
           </ul>
         </div>
       </div>

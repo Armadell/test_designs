@@ -3,11 +3,11 @@ import React from 'react'
 const HomeBanner = () => {
 
     return (
-        <section className='md:mt-[5.9rem]   mt-[5.9rem] w-full overflow-hidden '>
+        <section className='md:mt-[5.9rem] bg-white  mt-[5.9rem] w-full overflow-hidden '>
 
 
 
-            <div className="w-full mx-auto hidden md:flex  md:relative   flex flex-col">
+            <div className="container w-full mx-auto hidden md:flex mt-6 md:relative   flex flex-col">
                
                     <img
                         className='object-fit w-full h-full'

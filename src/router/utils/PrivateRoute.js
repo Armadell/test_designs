@@ -1,11 +1,14 @@
-import { useState } from "react"
+import { useSelector } from "react-redux"
 import { Navigate } from "react-router-dom"
 
 
 const PrivateRoute=({children})=>{
-    console.log(children)
+    console.log(useSelector(state=>state))
+    const isAuth=localStorage.getItem('refresh')
+    console.log(isAuth)
+
     //data must come from redux for this
-    const [isAuth,setAuth]=useState(true)
+   
     console.log("private route works")
     return(
       isAuth ? children :<Navigate to="/login" />

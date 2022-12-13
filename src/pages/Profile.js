@@ -1,10 +1,23 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import {logOut} from '../Redux/reducer' 
 const Profile = () => {
-    const data=useSelector((state)=>state.user.firstname)
+
+    const dispatch=useDispatch()
+    const  user= useSelector((state)=>state.user.user.firstname)
+    const auth=localStorage.getItem('refresh')
+    const logoutHandler=()=>{
+      dispatch(logOut())
+      localStorage.removeItem('refresh')
+      localStorage.removeItem('access')
+    }
+    console.log(user)
   return (
     <div>
-        <h1>this is profile{data}</h1>
+      {auth ? (<p onClick={logoutHandler}>Logout</p>):(<Link to='/login'>login</Link>)}
+        {user && <p>Hello{user}</p>}
     </div>
   )
 }
